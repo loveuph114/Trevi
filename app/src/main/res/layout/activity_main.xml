@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="dev.reece.trevi.MainActivity"
+    android:padding="8dp"
+    >
+
+    <TextView
+        android:id="@+id/main_column"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="column"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <EditText
+        android:id="@+id/main_column_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/main_column"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:inputType="number"
+        />
+
+    <TextView
+        android:id="@+id/main_row"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="row"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_column_input"
+        android:paddingTop="8dp"
+        />
+
+    <EditText
+        android:id="@+id/main_row_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/main_row"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:inputType="number"
+        />
+
+    <Button
+        android:id="@+id/main_submit_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/main_row_input"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="submit"
+        android:paddingTop="8dp"
+        />
+
+</android.support.constraint.ConstraintLayout>
